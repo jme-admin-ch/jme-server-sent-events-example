@@ -32,7 +32,7 @@ frontend:
     applicationUrl: http://localhost:8310/jme-server-sent-events-secure-scs/
     logoutRedirectUri: http://localhost:4199/
     mockPams: true
-    pamsEnvironment: DEV
+    pamsEnvironment: ""
     tokenAwarePatterns:
       - "^/jme-server-sent-events-secure-scs/api/.*"
       - "^http://localhost:8310/jme-server-sent-events-secure-scs/api/.*"

@@ -51,7 +51,7 @@ public class FrontendConfigProperties {
     /**
      * Pams Environment to be used.
      */
-    @NotEmpty
+    @NotNull
     private String pamsEnvironment;
 
     /**

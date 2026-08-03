@@ -1,6 +1,5 @@
 package ch.admin.bit.jme.web.ui;
 
-import io.swagger.v3.oas.annotations.ExternalDocumentation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
@@ -12,8 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @Tag(name = "FrontendConfigurationController",
-     description = "Serves configuration information for the frontend as specified by Quadrel-Services/QdAuth.",
-     externalDocs = @ExternalDocumentation(url = "https://github.com/BAZG-Quadrel/quadrel-auth"))
+     description = "Serves configuration information for the frontend as specified by Quadrel-Services/QdAuth.")
 @RestController
 @RequestMapping("/ui-api/configuration")
 @RequiredArgsConstructor

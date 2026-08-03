@@ -78,20 +78,6 @@
               </arguments>
             </configuration>
           </execution>
-          <execution>
-            <id>generate-frontend-license-file</id>
-            <phase>generate-resources</phase>
-            <goals>
-              <goal>exec</goal>
-            </goals>
-            <configuration>
-              <executable>npm</executable>
-              <arguments>
-                <argument>run</argument>
-                <argument>generate-license-file</argument>
-              </arguments>
-            </configuration>
-          </execution>
         </executions>
       </plugin>
     </plugins>

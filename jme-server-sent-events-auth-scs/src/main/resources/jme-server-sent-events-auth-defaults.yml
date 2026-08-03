@@ -14,6 +14,8 @@ oauth-mock-data:
         - "${mockserver.base-url}/swagger-ui/oauth2-redirect.html"
         - "http://localhost:4200/"
         - "http://localhost:4200/assets/auth/silent-renew.html"
+        - "http://localhost:4201/"
+        - "http://localhost:4201/assets/auth/silent-renew.html"
         - "http://localhost:8080/jme-server-sent-events-scs/"
         - "http://localhost:8080/jme-server-sent-events-scs/assets/auth/silent-renew.html"
         - "http://localhost:8080/jme-server-sent-events-scs/swagger-ui/oauth2-redirect.html"

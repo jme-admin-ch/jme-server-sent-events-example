@@ -47,7 +47,7 @@ frontend:
     applicationUrl: http://localhost:8081${server.servlet.context-path}/
     logoutRedirectUri: http://localhost:4199/
     mockPams: true
-    pamsEnvironment: DEV
+    pamsEnvironment: ""
     tokenAwarePatterns:
       - "^${server.servlet.context-path}/api/.*" # build-prod
       - "^${frontend.auth.applicationUrl}api/.*" # build-dev

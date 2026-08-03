@@ -1,6 +1,7 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {QdDialogAuthSessionEndService, QdShellConfig} from '@quadrel-enterprise-ui/framework';
 import {QdAuthenticationService, QdConfigService} from '@quadrel-enterprise-ui/auth';
+import {TranslateService} from '@ngx-translate/core';
 import {VersionService} from './shared/services/version.service';
 import {PushEventService} from "./shared/services/pushevent.service";
 
@@ -15,6 +16,7 @@ export class AppComponent implements OnInit, OnDestroy {
     private readonly qdAuthenticationService: QdAuthenticationService,
     private readonly authSupport: QdDialogAuthSessionEndService,
     private readonly qdConfigService: QdConfigService,
+    private readonly translateService: TranslateService,
     private readonly versionService: VersionService,
     private readonly pushEventService: PushEventService
   ) {}
@@ -55,6 +57,9 @@ export class AppComponent implements OnInit, OnDestroy {
   };
 
   ngOnInit(): void {
+    this.translateService.setDefaultLang('de');
+    this.translateService.use('de');
+
     // Subscribe to version changes and update copyright info when the version is fetched
     this.versionService.version$.subscribe(version => {
       if (version) {
