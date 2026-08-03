@@ -77,10 +77,47 @@ docker compose -f docker/docker-compose.yml down -v
 
 ## Relevant implementation
 
-The backend applications use `jeap-server-sent-events-starter`. Their `PersonService` publishes resource mutations and
-their `application.yml` files select anonymous or OAuth2-protected SSE transport. The Angular frontends enable
-`refreshOnPushEvent` for the persons table and subscribe to resource-mutation events through the Quadrel push-event
-service.
+### Kafka and SSE flow
+
+The backend applications use `jeap-server-sent-events-starter`. When `PersonService` creates, updates or deletes a
+person, it calls `ResourceMutationService.resourceMutation(...)`. The starter publishes a `NotifyClientCommand` to the
+application's Kafka topic and every running backend instance consumes it. Each instance then forwards the mutation to
+its connected browser clients through `/ui-api/sse/events`. This Kafka fan-out ensures that a browser receives the
+notification even when its SSE connection terminates on a different backend instance from the one handling the change.
+
+The examples use separate topics:
+
+- `jme-server-sent-events-scs-notifyclient`
+- `jme-server-sent-events-secure-scs-notifyclient`
+
+Both applications declare producer and consumer contracts in their `Application` class and select their topic through
+`jeap.sse.kafka.topic` in the corresponding defaults file. The local Docker Compose environment creates both topics and
+provides Kafka on port `9092` and Schema Registry on port `7781`.
+
+The Angular persons table enables `refreshOnPushEvent` with the resource identifier `persons`. On a resource-mutation
+event, Quadrel reloads the current person data through the regular REST API rather than carrying the resource itself in
+the SSE payload.
+
+### Backend
+
+- Starter dependency: the two web-module `pom.xml` files
+- Message contracts: each web module's `ch.admin.bit.jme.Application`
+- Resource mutations: each web module's `ch.admin.bit.jme.domain.PersonService`
+- Topic and authorization configuration: `jme-server-sent-events-defaults.yml` and
+  `jme-server-sent-events-secure-defaults.yml`
+- Endpoint security: each web module's `ch.admin.bit.jme.web.config.WebSecurityConfig`
+
+### Frontend
+
+- Table refresh configuration and observed events: `persons-overview.component.ts`
+- REST reload implementation: `person-table-data-resolver.service.ts`
+- Push-event integration: `pushevent.service.ts`
+
+For the reusable library behavior and configuration options, see the
+[jEAP Server-Sent Events documentation](https://github.com/jeap-admin-ch/jeap-server-sent-events/tree/main/docs).
+
+Platform deployment URLs and environment configuration intentionally live in the corresponding Nivel and RHOS wrapper
+repositories; this repository contains only portable behavior and local development information.
 
 ## JME
 
