@@ -13,10 +13,6 @@
     <artifactId>jme-server-sent-events-scs-web</artifactId>
     <packaging>jar</packaging>
 
-    <properties>
-        <ecr-repo-name>jme-server-sent-events-scs</ecr-repo-name>
-    </properties>
-
     <dependencies>
         <dependency>
             <groupId>ch.admin.bit.jeap</groupId>
@@ -35,8 +31,8 @@
         </dependency>
 
         <dependency>
-            <groupId>ch.admin.bit.jeap</groupId>
-            <artifactId>jeap-spring-boot-postgresql-aws-starter</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
 
         <dependency>
@@ -52,11 +48,6 @@
         <dependency>
             <groupId>ch.admin.bit.jeap</groupId>
             <artifactId>jeap-server-sent-events-starter</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>ch.admin.bit.jeap</groupId>
-            <artifactId>jeap-spring-boot-config-aws-starter</artifactId>
         </dependency>
 
         <dependency>
@@ -168,33 +159,16 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <executions>
                     <execution>
+                        <id>build-info</id>
                         <goals>
                             <goal>build-info</goal>
                         </goals>
                     </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>com.google.cloud.tools</groupId>
-                <artifactId>jib-maven-plugin</artifactId>
-                <executions>
                     <execution>
-                        <phase>deploy</phase>
-                        <goals>
-                            <goal>build</goal>
-                        </goals>
+                        <id>default</id>
+                        <phase>none</phase>
                     </execution>
                 </executions>
-                <configuration>
-                    <from>
-                        <image>amazoncorretto:25-al2023-headless</image>
-                    </from>
-                    <to>
-                        <image>654654230768.dkr.ecr.eu-central-2.amazonaws.com/${ecr-repo-name}:${project.version}
-                        </image>
-                        <credHelper>ecr-login</credHelper>
-                    </to>
-                </configuration>
             </plugin>
         </plugins>
     </build>

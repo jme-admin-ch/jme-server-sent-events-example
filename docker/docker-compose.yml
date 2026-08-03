@@ -2,7 +2,6 @@
 services:
   postgresql-db-local:
     image: postgres:18.4
-    container_name: postgresql-db-local
     ports:
       - "5432:5432"
     environment:
@@ -12,7 +11,6 @@ services:
 
   postgresql-secure-example-db-local:
     image: postgres:18.4
-    container_name: postgresql-db-secure-example-local
     ports:
       - "5433:5432"
     environment:
@@ -24,7 +22,6 @@ services:
   broker:
     image: confluentinc/cp-kafka:8.3.0
     hostname: broker
-    container_name: broker
     ports:
       - "9092:9092"
     volumes:
@@ -48,17 +45,26 @@ services:
       # Temporary storage settings
       KAFKA_LOG_DIRS: /tmp/kafka-logs
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+    healthcheck:
+      test: ["CMD", "kafka-topics", "--bootstrap-server", "broker:29092", "--list"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
 
   broker_init:
     image: confluentinc/cp-kafka:8.3.0
     command: "kafka-configs --bootstrap-server broker:29092 --alter --add-config 'SCRAM-SHA-512=[password=user-secret]' --entity-type users --entity-name user"
     depends_on:
-      - broker
+      broker:
+        condition: service_healthy
 
   kafka-init:
     image: confluentinc/cp-kafka:8.3.0
     depends_on:
-      - broker
+      broker:
+        condition: service_healthy
+      broker_init:
+        condition: service_completed_successfully
     entrypoint: ["/bin/sh", "-c"]
     command: |
       "
@@ -72,10 +78,11 @@ services:
   schema-registry:
     image: confluentinc/cp-schema-registry:8.3.0
     hostname: schema-registry
-    container_name: schema-registry
     depends_on:
-      - broker
-      - broker_init
+      broker:
+        condition: service_healthy
+      broker_init:
+        condition: service_completed_successfully
     ports:
       - "7781:8081"
     environment:

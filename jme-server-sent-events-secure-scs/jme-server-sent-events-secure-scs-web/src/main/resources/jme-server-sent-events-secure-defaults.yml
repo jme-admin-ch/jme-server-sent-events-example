@@ -1,0 +1,50 @@
+spring:
+  application:
+    name: jme-server-sent-events-secure-scs
+  jpa:
+    open-in-view: false
+
+server:
+  port: 8080
+  servlet:
+    context-path: /${spring.application.name}
+  compression:
+    enabled: true
+
+springdoc:
+  swagger-ui:
+    oauth:
+      client-id: microService
+    try-it-out-enabled: true
+
+jeap:
+  security:
+    oauth2:
+      resourceserver:
+        system-name: "jme"
+  swagger:
+    status: OPEN
+  web:
+    headers:
+      content-security-policy: "default-src 'self' localhost:* data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; frame-src 'self';"
+    tls:
+      enabled: false
+  sse:
+    kafka:
+      topic: jme-server-sent-events-secure-scs-notifyclient
+    web:
+      auth:
+        resource: "sse"
+        operation: "read"
+  messaging:
+    kafka:
+      systemName: jme
+      errorTopicName: jme-messageprocessing-failed
+
+frontend:
+  auth:
+    pamsAppId: "notSet"
+    auto-login: true
+    silent-renew: true
+    system-name: ${jeap.security.oauth2.resourceserver.system-name}
+    renew-user-info-after-token-renew: true

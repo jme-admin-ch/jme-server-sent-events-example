@@ -28,44 +28,25 @@
             <groupId>ch.admin.bit.jeap</groupId>
             <artifactId>jeap-spring-boot-tls-starter</artifactId>
         </dependency>
-        <dependency>
-            <groupId>ch.admin.bit.jeap</groupId>
-            <artifactId>jeap-spring-boot-config-aws-starter</artifactId>
-        </dependency>
     </dependencies>
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+            </plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <mainClass>ch.admin.bit.jeap.oauth.mock.server.ServerApplication</mainClass>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>com.google.cloud.tools</groupId>
-                <artifactId>jib-maven-plugin</artifactId>
                 <executions>
                     <execution>
-                        <phase>deploy</phase>
-                        <goals>
-                            <goal>build</goal>
-                        </goals>
+                        <phase>none</phase>
                     </execution>
                 </executions>
-                <configuration>
-                    <container>
-                        <mainClass>ch.admin.bit.jeap.oauth.mock.server.ServerApplication</mainClass>
-                    </container>
-                    <from>
-                        <image>amazoncorretto:25-al2023-headless</image>
-                    </from>
-                    <to>
-                        <image>654654230768.dkr.ecr.eu-central-2.amazonaws.com/${project.artifactId}:${project.version}</image>
-                        <credHelper>ecr-login</credHelper>
-                    </to>
-                </configuration>
             </plugin>
         </plugins>
     </build>

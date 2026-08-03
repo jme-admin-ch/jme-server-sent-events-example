@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Tag(name = "FrontendConfigurationController",
      description = "Serves configuration information for the frontend as specified by Quadrel-Services/QdAuth.",
-     externalDocs = @ExternalDocumentation(url = "https://confluence.bit.admin.ch/display/DAZUIC/Integration+der+Qd-Auth+Library"))
+     externalDocs = @ExternalDocumentation(url = "https://github.com/BAZG-Quadrel/quadrel-auth"))
 @RestController
 @RequestMapping("/ui-api/configuration")
 @RequiredArgsConstructor

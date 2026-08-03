@@ -1,6 +1,5 @@
 package ch.admin.bit.jme.web.ui;
 
-import ch.admin.bit.jme.web.AfterDeploymentSmokeTestIT;
 import ch.admin.bit.jme.domain.Person;
 import ch.admin.bit.jme.domain.PersonService;
 import com.microsoft.playwright.Locator;
@@ -22,7 +21,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @DisabledIfSystemProperty(
-        named = AfterDeploymentSmokeTestIT.DEPLOY_STAGE_PROPERTY_NAME,
+        named = "deployStage",
         matches = ".*"
 )
 class UiPersonsBrowserIT extends UiBrowserTestBase {

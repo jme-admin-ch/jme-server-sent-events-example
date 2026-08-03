@@ -1,2 +1,0 @@
-mockserver:
-  base-url: "https://jme-dev.ingress.nivel.bazg.admin.ch/${spring.application.name}"
