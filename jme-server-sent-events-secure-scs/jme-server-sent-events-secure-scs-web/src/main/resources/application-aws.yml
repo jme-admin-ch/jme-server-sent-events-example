@@ -1,0 +1,61 @@
+spring:
+  config:
+    import:
+      - "jeap-app-config-aws:"
+      - "jeap-aws-secretsmanager:jme-server-sent-events-secure-scs?prefix=secretsmanager."
+      - "jeap-aws-secretsmanager:shared/credential-context?prefix=secretsmanager-shared."
+
+  flyway:
+    locations: classpath:db/migration
+    default-schema: data
+
+management:
+  server:
+    base-path: /${spring.application.name}
+    port: 52873
+    ssl:
+      enabled: false
+
+jeap:
+  messaging:
+    kafka:
+      cluster:
+        sample:
+          defaultCluster: true
+          bootstrapServers: "${aws.services.kafka.bootstrapServers}"
+          aws:
+            glue:
+              registryName: ${aws.services.glue.registryName}
+              region: "${aws.services.glue.region}"
+              assume-iam-role-arn: "${aws.services.glue.roleArn}"
+            msk:
+              iamAuthEnabled: true
+              region: "${AWS_REGION}"
+              assume-iam-role-arn: "${aws.services.kafka.roleArn}"
+  logging:
+    platform: cloudwatch
+  monitor:
+    prometheus:
+      secure: false
+  security:
+    oauth2:
+      resourceserver:
+        authorization-server:
+          issuer: "https://jme-dev.ingress.nivel.bazg.admin.ch/jme-server-sent-events-auth-scs"
+          jwk-set-uri: "https://internal-csp.jme-dev.nivel.bazg.admin.ch/jme-server-sent-events-auth-scs/.well-known/jwks.json"
+  swagger:
+    status: OPEN
+  web:
+    tls:
+      enabled: true
+
+frontend:
+  auth:
+    authority: ${jeap.security.oauth2.resourceserver.authorization-server.issuer}
+    applicationUrl: https://jme-dev.ingress.nivel.bazg.admin.ch${server.servlet.context-path}/
+    logoutRedirectUri: https://notpossibleondev/
+    mockPams: true
+    pamsEnvironment: DEV
+    tokenAwarePatterns:
+      - "^${server.servlet.context-path}/api/.*"
+    clientId: microService

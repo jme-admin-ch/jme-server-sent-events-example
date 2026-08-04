@@ -1,0 +1,13 @@
+{
+  "i18n.application.title": "jme-server-sent-events-secure-scs",
+  "i18n.overview.title": "Panoramica",
+  "i18n.overview.section.title": "Persone",
+  "i18n.overview.section.addBtn": "Aggiungi nuova persona",
+  "i18n.overview.table.firstname": "Nome",
+  "i18n.overview.table.lastname": "Cognome",
+  "i18n.overview.table.id": "ID",
+  "i18n.overview.table.secondaryActions.delete": "Elimina",
+  "i18n.create.title": "Aggiungi nuova persona",
+  "i18n.create.section.title": "Dettagli personali",
+  "i18n.error.insufficientPermissions": "Permessi insufficienti per aggiungere o eliminare"
+}

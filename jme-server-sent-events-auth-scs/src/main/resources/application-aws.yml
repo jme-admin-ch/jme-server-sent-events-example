@@ -1,0 +1,26 @@
+spring:
+  config:
+    import:
+      - "jeap-app-config-aws:"
+      - "jeap-aws-secretsmanager:jme-server-sent-events-auth-scs?prefix=secretsmanager."
+      - "jeap-aws-secretsmanager:shared/credential-context?prefix=secretsmanager-shared."
+
+management:
+  server:
+    base-path: /${spring.application.name}
+    port: 52873
+    ssl:
+      enabled: false
+
+jeap:
+  logging:
+    platform: cloudwatch
+  monitor:
+    prometheus:
+      secure: false
+  web:
+    tls:
+      enabled: true
+
+mockserver:
+  base-url: "https://jme-dev.ingress.nivel.bazg.admin.ch/${spring.application.name}"

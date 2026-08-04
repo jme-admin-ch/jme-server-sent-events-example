@@ -1,0 +1,10 @@
+frontend:
+  auth:
+    authority: ${jeap.security.oauth2.resourceserver.authorization-server.issuer}
+    applicationUrl: http://localhost:4201/
+    logoutRedirectUri: http://localhost:4199/
+    mockPams: true
+    pamsEnvironment: DEV
+    tokenAwarePatterns:
+      - "^http://localhost:8081${server.servlet.context-path}/api/.*"
+    clientId: microService

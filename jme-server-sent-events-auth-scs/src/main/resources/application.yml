@@ -1,0 +1,53 @@
+spring:
+  application:
+    name: jme-server-sent-events-auth-scs
+
+server:
+  servlet:
+    context-path: /${spring.application.name}
+
+oauth-mock-data:
+  clients:
+    - client-id: "microService"
+      client-secret: "{noop}secret"
+      registered-redirect-uri: [
+        "${mockserver.base-url}/swagger-ui/oauth2-redirect.html",
+        "http://localhost:4200/",
+        "http://localhost:4200/assets/auth/silent-renew.html",
+        "http://localhost:8080/jme-server-sent-events-scs/",
+        "http://localhost:8080/jme-server-sent-events-scs/assets/auth/silent-renew.html",
+        "http://localhost:8080/jme-server-sent-events-scs/swagger-ui/oauth2-redirect.html",
+        "http://localhost:8081/jme-server-sent-events-secure-scs/",
+        "http://localhost:8081/jme-server-sent-events-secure-scs/assets/auth/silent-renew.html",
+        "http://localhost:8081/jme-server-sent-events-secure-scs/swagger-ui/oauth2-redirect.html",
+        "https://jme-dev.ingress.nivel.bazg.admin.ch/jme-server-sent-events-scs/",
+        "https://jme-dev.ingress.nivel.bazg.admin.ch/jme-server-sent-events-scs/assets/auth/silent-renew.html",
+        "https://jme-dev.ingress.nivel.bazg.admin.ch/jme-server-sent-events-scs/swagger-ui/oauth2-redirect.html",
+        "https://bit-jme-d.apps.p-szb-ros-shrd-npr-01.cloud.admin.ch/jme-server-sent-events-scs/",
+        "https://bit-jme-d.apps.p-szb-ros-shrd-npr-01.cloud.admin.ch/jme-server-sent-events-scs/assets/auth/silent-renew.html",
+        "https://bit-jme-d.apps.p-szb-ros-shrd-npr-01.cloud.admin.ch/jme-server-sent-events-scs/swagger-ui/oauth2-redirect.html",
+        "https://jme-dev.ingress.nivel.bazg.admin.ch/jme-server-sent-events-secure-scs/",
+        "https://jme-dev.ingress.nivel.bazg.admin.ch/jme-server-sent-events-secure-scs/assets/auth/silent-renew.html",
+        "https://jme-dev.ingress.nivel.bazg.admin.ch/jme-server-sent-events-secure-scs/swagger-ui/oauth2-redirect.html",
+        "https://bit-jme-d.apps.p-szb-ros-shrd-npr-01.cloud.admin.ch/jme-server-sent-events-secure-scs/",
+        "https://bit-jme-d.apps.p-szb-ros-shrd-npr-01.cloud.admin.ch/jme-server-sent-events-secure-scs/assets/auth/silent-renew.html",
+        "https://bit-jme-d.apps.p-szb-ros-shrd-npr-01.cloud.admin.ch/jme-server-sent-events-secure-scs/swagger-ui/oauth2-redirect.html"
+      ]
+      # Note: Roles for a specific business partner can be mocked like this:
+      # bproles:
+      #     "12345": [ "jme_@document_#read", "jme_@document_#write" ]
+      userroles:
+        - "jme_@person_#read"
+        - "jme_@person_#write"
+        - "jme_@object_#read"
+        - "jme_@object_#write"
+        - "jme_@message_#send"
+        - "jme_@message_#read"
+        - "jme_@sse_#read"
+  users:
+    - id: "user"
+      given-name: "Maxine"
+      family-name: "Muster"
+      locale: "DE"
+      preferred-username: "12345"
+      userroles: ["jme_@person_#read", "jme_@person_#write", "jme_@sse_#read"]

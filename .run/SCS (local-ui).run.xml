@@ -1,0 +1,21 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="SCS (local-ui)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <option name="ACTIVE_PROFILES" value="local-ui" />
+    <module name="jme-server-sent-events-scs-web" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="ch.admin.bit.jme.Application" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="ch.admin.bit.jme.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+      <option name="credential" />
+      <option name="region" />
+      <option name="useCurrentConnection" value="false" />
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

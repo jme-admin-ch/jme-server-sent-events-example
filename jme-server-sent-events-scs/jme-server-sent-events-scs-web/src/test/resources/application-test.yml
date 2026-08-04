@@ -1,0 +1,46 @@
+server:
+  port: 8311
+  servlet:
+    context-path: /jme-server-sent-events-scs
+
+frontend:
+  auth:
+    authority: http://localhost:8312/oidc-mock
+    applicationUrl: http://localhost:8311/jme-server-sent-events-scs/
+    logoutRedirectUri: http://localhost:4199/
+    mockPams: true
+    pamsEnvironment: DEV
+    tokenAwarePatterns:
+      - "^/jme-server-sent-events-scs/api/.*"
+      - "^http://localhost:8311/jme-server-sent-events-scs/api/.*"
+    clientId: jme-server-sent-events-scs
+    auto-login: false
+    pams-app-id: someAppId
+    silent-renew: false
+    system-name: jme
+    renew-user-info-after-token-renew: false
+
+jeap:
+  security:
+    oauth2:
+      resourceserver:
+        authorization-server:
+          issuer: http://localhost:8312/oidc-mock
+          jwk-set-uri: http://localhost:8312/oidc-mock/.well-known/jwks.json
+  messaging:
+    kafka:
+      embedded: false
+      systemName: test
+      errorTopicName: errorTopic
+      message-type-encryption-disabled: true
+      cluster:
+        default:
+          bootstrapServers: "localhost:13666"
+          securityProtocol: PLAINTEXT
+          schemaRegistryUrl: "mock://my-registry"
+          schemaRegistryUsername: unused
+          schemaRegistryPassword: unused
+
+database-migration:
+  init-container-execution: false # In Tests we do not work with init containers; the schema is always created at startup
+  startup-migrate-mode-enabled: true

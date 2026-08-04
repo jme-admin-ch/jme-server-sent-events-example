@@ -1,0 +1,14 @@
+{
+  "i18n.application.title": "jme-server-sent-events-scs",
+  "i18n.overview.title": "Übersicht",
+  "i18n.overview.section.title": "Personen",
+  "i18n.overview.section.addBtn": "Neue Person erfassen",
+  "i18n.overview.table.firstname": "Vorname",
+  "i18n.overview.table.lastname": "Nachname",
+  "i18n.overview.table.id": "ID",
+  "i18n.overview.table.secondaryActions.delete": "Löschen",
+  "i18n.create.title": "Neue Person erfassen",
+  "i18n.create.section.title": "Personalien",
+  "i18n.error.insufficientPermissions": "Nicht genügend Rechte für erfassen oder löschen",
+  "i18n.copyright.info": "Powered by jEAP and Quadrel - Generated with jEAP Initializer"
+}

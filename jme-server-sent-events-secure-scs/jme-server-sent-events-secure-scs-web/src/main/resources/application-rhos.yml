@@ -1,0 +1,37 @@
+management:
+  server:
+    base-path: /${spring.application.name}
+    port: 8082
+base-url: https://bit-jme-d.apps.p-szb-ros-shrd-npr-01.cloud.admin.ch
+
+mockserver:
+  base-url: "${base-url}/${spring.application.name}"
+
+jeap:
+  monitor:
+    prometheus:
+      secure: false
+  web:
+    tls:
+      enabled: false
+  security:
+    oauth2:
+      resourceserver:
+        authorization-server:
+          issuer: https://bit-jme-d.apps.p-szb-ros-shrd-npr-01.cloud.admin.ch/jme-server-sent-events-auth-scs
+          jwk-set-uri: ${jeap.security.oauth2.resourceserver.authorization-server.issuer}/.well-known/jwks.json
+
+database-migration:
+  init-container: ${IS_INIT_CONTAINER_EXECUTION}
+
+frontend:
+  auth:
+    authority: ${jeap.security.oauth2.resourceserver.authorization-server.issuer}
+    applicationUrl: ${base-url}${server.servlet.context-path}/
+    logoutRedirectUri: https://notpossibleondev/
+    mockPams: true
+    pamsEnvironment: DEV
+    tokenAwarePatterns:
+      - "^${server.servlet.context-path}/api/.*"
+    clientId: microService
+
