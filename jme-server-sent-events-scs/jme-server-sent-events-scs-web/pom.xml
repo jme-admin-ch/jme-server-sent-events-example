@@ -11,6 +11,7 @@
     </parent>
 
     <artifactId>jme-server-sent-events-scs-web</artifactId>
+    <name>${project.artifactId}</name>
     <packaging>jar</packaging>
 
     <dependencies>
