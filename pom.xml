@@ -35,7 +35,7 @@
 
     <groupId>ch.admin.bit.jeap</groupId>
     <artifactId>jme-server-sent-events-example</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.2-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -66,36 +66,6 @@
                             </manifestEntries>
                         </archive>
                     </configuration>
-                    <executions>
-                        <execution>
-                            <id>empty-sources-jar</id>
-                            <phase>package</phase>
-                            <goals>
-                                <goal>jar</goal>
-                            </goals>
-                            <configuration>
-                                <classifier>sources</classifier>
-                                <includes>
-                                    <include>META-INF/LICENSE</include>
-                                </includes>
-                                <forceCreation>true</forceCreation>
-                            </configuration>
-                        </execution>
-                        <execution>
-                            <id>empty-javadoc-jar</id>
-                            <phase>package</phase>
-                            <goals>
-                                <goal>jar</goal>
-                            </goals>
-                            <configuration>
-                                <classifier>javadoc</classifier>
-                                <includes>
-                                    <include>META-INF/LICENSE</include>
-                                </includes>
-                                <forceCreation>true</forceCreation>
-                            </configuration>
-                        </execution>
-                    </executions>
                 </plugin>
             </plugins>
         </pluginManagement>

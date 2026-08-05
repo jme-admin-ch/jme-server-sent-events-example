@@ -6,13 +6,13 @@
     <parent>
         <groupId>ch.admin.bit.jeap</groupId>
         <artifactId>jme-server-sent-events-example</artifactId>
-        <version>1.0.1-SNAPSHOT</version>
+        <version>1.0.2-SNAPSHOT</version>
     </parent>
 
     <groupId>ch.admin.bit.jeap</groupId>
     <artifactId>jme-server-sent-events-scs</artifactId>
     <name>${project.artifactId}</name>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.2-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
