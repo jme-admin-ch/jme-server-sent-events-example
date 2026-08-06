@@ -14,7 +14,7 @@
     "lint-fix": "ng lint --fix",
     "prettier": "./node_modules/.bin/prettier --write **/{*.ts,*.html,*.scss,*.json,*.js}",
     "format": "npm run lint -- --fix && npm run prettier",
-    "check-licenses": "license-checker --production --excludePrivatePackages --excludePackages '@quadrel-enterprise-ui/auth@20.1.1;@quadrel-enterprise-ui/browser-check@20.0.1;@quadrel-enterprise-ui/framework@20.28.1;@quadrel-enterprise-ui/language@20.0.1' --onlyAllow 'MIT;Apache-2.0;BSD-2-Clause;BSD-3-Clause;0BSD;ISC'"
+    "check-licenses": "license-checker --production --excludePrivatePackages --excludePackages '@quadrel-enterprise-ui/auth@*;@quadrel-enterprise-ui/browser-check@*;@quadrel-enterprise-ui/framework@*;@quadrel-enterprise-ui/language@*' --onlyAllow 'MIT;Apache-2.0;BSD-2-Clause;BSD-3-Clause;0BSD;ISC'"
   },
   "private": true,
   "dependencies": {
