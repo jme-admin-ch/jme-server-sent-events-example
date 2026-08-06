@@ -13,7 +13,7 @@
     "lint-fix": "ng lint --fix",
     "prettier": "./node_modules/.bin/prettier --write **/{*.ts,*.html,*.scss,*.json,*.js}",
     "format": "npm run lint -- --fix && npm run prettier",
-    "check-licenses": "license-checker --production --excludePrivatePackages --onlyAllow 'MIT;Apache-2.0;BSD-2-Clause;BSD-3-Clause;0BSD;ISC'"
+    "check-licenses": "apache2-license-checker"
   },
   "private": true,
   "dependencies": {
@@ -50,6 +50,7 @@
     "@angular/build": "^20.0",
     "@angular/cli": "^20.0",
     "@angular/compiler-cli": "^20.3.27",
+    "@bbc/apache2-license-checker": "^1.1.4",
     "@types/jest": "30.0.0",
     "@types/node": "25.9.5",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
