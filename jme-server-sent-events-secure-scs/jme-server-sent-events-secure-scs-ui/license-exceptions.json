@@ -1,0 +1,16 @@
+{
+  "exceptions": {
+    "@quadrel-enterprise-ui/auth@*": {
+      "reason": "Existing Quadrel runtime dependency whose published npm package omits valid SPDX license metadata."
+    },
+    "@quadrel-enterprise-ui/browser-check@*": {
+      "reason": "Existing Quadrel runtime dependency whose published npm package omits valid SPDX license metadata."
+    },
+    "@quadrel-enterprise-ui/framework@*": {
+      "reason": "Existing Quadrel runtime dependency whose published npm package omits valid SPDX license metadata."
+    },
+    "@quadrel-enterprise-ui/language@*": {
+      "reason": "Existing Quadrel runtime dependency whose published npm package omits valid SPDX license metadata."
+    }
+  }
+}
