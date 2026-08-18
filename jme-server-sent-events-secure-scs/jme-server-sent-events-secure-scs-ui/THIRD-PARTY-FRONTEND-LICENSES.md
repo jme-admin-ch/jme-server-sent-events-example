@@ -113,7 +113,7 @@
     - name: @angular/animations
     - licenses: MIT
     - repository: https://github.com/angular/angular
-    - license text: third-party-licenses/@angular__animations/LICENSE
+    - license text: [third-party-licenses/@angular__animations/LICENSE](third-party-licenses/@angular__animations/LICENSE)
  - **[@angular/build](https://github.com/angular/angular-cli)**
     - name: @angular/build
     - licenses: MIT
@@ -122,7 +122,7 @@
     - name: @angular/cdk
     - licenses: MIT
     - repository: https://github.com/angular/components
-    - license text: third-party-licenses/@angular__cdk/LICENSE
+    - license text: [third-party-licenses/@angular__cdk/LICENSE](third-party-licenses/@angular__cdk/LICENSE)
  - **[@angular/cli](https://github.com/angular/angular-cli)**
     - name: @angular/cli
     - licenses: MIT
@@ -131,7 +131,7 @@
     - name: @angular/common
     - licenses: MIT
     - repository: https://github.com/angular/angular
-    - license text: third-party-licenses/@angular__common/LICENSE
+    - license text: [third-party-licenses/@angular__common/LICENSE](third-party-licenses/@angular__common/LICENSE)
  - **[@angular/compiler-cli](https://github.com/angular/angular)**
     - name: @angular/compiler-cli
     - licenses: MIT
@@ -140,32 +140,32 @@
     - name: @angular/compiler
     - licenses: MIT
     - repository: https://github.com/angular/angular
-    - license text: third-party-licenses/@angular__compiler/LICENSE
+    - license text: [third-party-licenses/@angular__compiler/LICENSE](third-party-licenses/@angular__compiler/LICENSE)
  - **[@angular/core](https://github.com/angular/angular)**
     - name: @angular/core
     - licenses: MIT
     - repository: https://github.com/angular/angular
-    - license text: third-party-licenses/@angular__core/LICENSE
+    - license text: [third-party-licenses/@angular__core/LICENSE](third-party-licenses/@angular__core/LICENSE)
  - **[@angular/forms](https://github.com/angular/angular)**
     - name: @angular/forms
     - licenses: MIT
     - repository: https://github.com/angular/angular
-    - license text: third-party-licenses/@angular__forms/LICENSE
+    - license text: [third-party-licenses/@angular__forms/LICENSE](third-party-licenses/@angular__forms/LICENSE)
  - **[@angular/platform-browser-dynamic](https://github.com/angular/angular)**
     - name: @angular/platform-browser-dynamic
     - licenses: MIT
     - repository: https://github.com/angular/angular
-    - license text: third-party-licenses/@angular__platform-browser-dynamic/LICENSE
+    - license text: [third-party-licenses/@angular__platform-browser-dynamic/LICENSE](third-party-licenses/@angular__platform-browser-dynamic/LICENSE)
  - **[@angular/platform-browser](https://github.com/angular/angular)**
     - name: @angular/platform-browser
     - licenses: MIT
     - repository: https://github.com/angular/angular
-    - license text: third-party-licenses/@angular__platform-browser/LICENSE
+    - license text: [third-party-licenses/@angular__platform-browser/LICENSE](third-party-licenses/@angular__platform-browser/LICENSE)
  - **[@angular/router](https://github.com/angular/angular)**
     - name: @angular/router
     - licenses: MIT
     - repository: https://github.com/angular/angular
-    - license text: third-party-licenses/@angular__router/LICENSE
+    - license text: [third-party-licenses/@angular__router/LICENSE](third-party-licenses/@angular__router/LICENSE)
  - **[@asamuzakjp/css-color](https://github.com/asamuzaK/cssColor)**
     - name: @asamuzakjp/css-color
     - licenses: MIT
@@ -678,17 +678,17 @@
     - name: @floating-ui/core
     - licenses: MIT
     - repository: https://github.com/floating-ui/floating-ui
-    - license text: third-party-licenses/@floating-ui__core/LICENSE
+    - license text: [third-party-licenses/@floating-ui__core/LICENSE](third-party-licenses/@floating-ui__core/LICENSE)
  - **[@floating-ui/dom](https://github.com/floating-ui/floating-ui)**
     - name: @floating-ui/dom
     - licenses: MIT
     - repository: https://github.com/floating-ui/floating-ui
-    - license text: third-party-licenses/@floating-ui__dom/LICENSE
+    - license text: [third-party-licenses/@floating-ui__dom/LICENSE](third-party-licenses/@floating-ui__dom/LICENSE)
  - **[@floating-ui/utils](https://github.com/floating-ui/floating-ui)**
     - name: @floating-ui/utils
     - licenses: MIT
     - repository: https://github.com/floating-ui/floating-ui
-    - license text: third-party-licenses/@floating-ui__utils/LICENSE
+    - license text: [third-party-licenses/@floating-ui__utils/LICENSE](third-party-licenses/@floating-ui__utils/LICENSE)
  - **[@gar/promise-retry](https://github.com/wraithgar/node-promise-retry)**
     - name: @gar/promise-retry
     - licenses: MIT
@@ -1037,7 +1037,7 @@
     - name: @ngrx/store
     - licenses: MIT
     - repository: https://github.com/ngrx/platform
-    - license text: third-party-licenses/@ngrx__store/LICENSE
+    - license text: [third-party-licenses/@ngrx__store/LICENSE](third-party-licenses/@ngrx__store/LICENSE)
  - **[@ngtools/webpack](https://github.com/angular/angular-cli)**
     - name: @ngtools/webpack
     - licenses: MIT
@@ -1046,11 +1046,11 @@
     - name: @ngx-translate/core
     - licenses: MIT
     - repository: https://github.com/ngx-translate/core
-    - license text: third-party-licenses/@ngx-translate__core/LICENSE
+    - license text: [third-party-licenses/@ngx-translate__core/LICENSE](third-party-licenses/@ngx-translate__core/LICENSE)
  - **@ngx-translate/http-loader**
     - name: @ngx-translate/http-loader
     - licenses: MIT
-    - license text: third-party-licenses/@ngx-translate__http-loader/LICENSE
+    - license text: [third-party-licenses/@ngx-translate__http-loader/LICENSE](third-party-licenses/@ngx-translate__http-loader/LICENSE)
  - **[@noble/hashes](https://github.com/paulmillr/noble-hashes)**
     - name: @noble/hashes
     - licenses: MIT
@@ -1106,7 +1106,7 @@
  - **@oblique/service-navigation-web-component**
     - name: @oblique/service-navigation-web-component
     - licenses: MIT
-    - license text: third-party-licenses/@oblique__service-navigation-web-component/LICENSE
+    - license text: [third-party-licenses/@oblique__service-navigation-web-component/LICENSE](third-party-licenses/@oblique__service-navigation-web-component/LICENSE)
  - **[@parcel/watcher-linux-x64-glibc](https://github.com/parcel-bundler/watcher)**
     - name: @parcel/watcher-linux-x64-glibc
     - licenses: MIT
@@ -1179,7 +1179,7 @@
     - name: @popperjs/core
     - licenses: MIT
     - repository: github:popperjs/popper-core
-    - license text: third-party-licenses/@popperjs__core/LICENSE.md
+    - license text: [third-party-licenses/@popperjs__core/LICENSE.md](third-party-licenses/@popperjs__core/LICENSE.md)
  - **[@quadrel-enterprise-ui/auth](https://github.com/BAZG-Quadrel/quadrel-auth)**
     - name: @quadrel-enterprise-ui/auth
     - licenses: UNKNOWN
@@ -1432,7 +1432,7 @@
     - name: @types/trusted-types
     - licenses: MIT
     - repository: https://github.com/DefinitelyTyped/DefinitelyTyped
-    - license text: third-party-licenses/@types__trusted-types/LICENSE
+    - license text: [third-party-licenses/@types__trusted-types/LICENSE](third-party-licenses/@types__trusted-types/LICENSE)
  - **[@types/ws](https://github.com/DefinitelyTyped/DefinitelyTyped)**
     - name: @types/ws
     - licenses: MIT
@@ -1653,7 +1653,7 @@
     - name: angular-auth-oidc-client
     - licenses: MIT
     - repository: https://github.com/damienbod/angular-auth-oidc-client
-    - license text: third-party-licenses/angular-auth-oidc-client/LICENSE
+    - license text: [third-party-licenses/angular-auth-oidc-client/LICENSE](third-party-licenses/angular-auth-oidc-client/LICENSE)
  - **[ansi-colors](doowb/ansi-colors)**
     - name: ansi-colors
     - licenses: MIT
@@ -2134,12 +2134,12 @@
     - name: deep-object-diff
     - licenses: MIT
     - repository: https://github.com/mattphillips/deep-object-diff
-    - license text: third-party-licenses/deep-object-diff/LICENSE
+    - license text: [third-party-licenses/deep-object-diff/LICENSE](third-party-licenses/deep-object-diff/LICENSE)
  - **[deepmerge-ts](https://github.com/RebeccaStevens/deepmerge-ts)**
     - name: deepmerge-ts
     - licenses: BSD-3-Clause
     - repository: https://github.com/RebeccaStevens/deepmerge-ts
-    - license text: third-party-licenses/deepmerge-ts/LICENSE
+    - license text: [third-party-licenses/deepmerge-ts/LICENSE](third-party-licenses/deepmerge-ts/LICENSE)
  - **[deepmerge](https://github.com/TehShrike/deepmerge)**
     - name: deepmerge
     - licenses: MIT
@@ -2272,7 +2272,7 @@
     - name: entities
     - licenses: BSD-2-Clause
     - repository: https://github.com/fb55/entities
-    - license text: third-party-licenses/entities/LICENSE
+    - license text: [third-party-licenses/entities/LICENSE](third-party-licenses/entities/LICENSE)
  - **[env-paths](sindresorhus/env-paths)**
     - name: env-paths
     - licenses: MIT
@@ -2401,8 +2401,8 @@
     - name: event-source-polyfill
     - licenses: MIT
     - repository: https://github.com/Yaffle/EventSource
-    - license text: third-party-licenses/event-source-polyfill/LICENSE
-    - license text: third-party-licenses/event-source-polyfill/LICENSE.md
+    - license text: [third-party-licenses/event-source-polyfill/LICENSE](third-party-licenses/event-source-polyfill/LICENSE)
+    - license text: [third-party-licenses/event-source-polyfill/LICENSE.md](third-party-licenses/event-source-polyfill/LICENSE.md)
  - **[eventemitter3](https://github.com/primus/eventemitter3)**
     - name: eventemitter3
     - licenses: MIT
@@ -3239,7 +3239,7 @@
     - name: lodash
     - licenses: MIT
     - repository: lodash/lodash
-    - license text: third-party-licenses/lodash/LICENSE
+    - license text: [third-party-licenses/lodash/LICENSE](third-party-licenses/lodash/LICENSE)
  - **[log-symbols](sindresorhus/log-symbols)**
     - name: log-symbols
     - licenses: MIT
@@ -3411,7 +3411,7 @@
     - name: moment
     - licenses: MIT
     - repository: https://github.com/moment/moment
-    - license text: third-party-licenses/moment/LICENSE
+    - license text: [third-party-licenses/moment/LICENSE](third-party-licenses/moment/LICENSE)
  - **[mrmime](lukeed/mrmime)**
     - name: mrmime
     - licenses: MIT
@@ -3476,12 +3476,12 @@
     - name: ngx-editor
     - licenses: MIT
     - repository: https://github.com/sibiraj-s/ngx-editor
-    - license text: third-party-licenses/ngx-editor/LICENSE
+    - license text: [third-party-licenses/ngx-editor/LICENSE](third-party-licenses/ngx-editor/LICENSE)
  - **[ngx-translate-multi-http-loader](https://github.com/rbalet/ngx-translate-multi-http-loader)**
     - name: ngx-translate-multi-http-loader
     - licenses: MIT
     - repository: https://github.com/rbalet/ngx-translate-multi-http-loader
-    - license text: third-party-licenses/ngx-translate-multi-http-loader/LICENSE
+    - license text: [third-party-licenses/ngx-translate-multi-http-loader/LICENSE](third-party-licenses/ngx-translate-multi-http-loader/LICENSE)
  - **[node-addon-api](https://github.com/nodejs/node-addon-api)**
     - name: node-addon-api
     - licenses: MIT
@@ -3610,7 +3610,7 @@
     - name: orderedmap
     - licenses: MIT
     - repository: https://github.com/marijnh/orderedmap
-    - license text: third-party-licenses/orderedmap/LICENSE
+    - license text: [third-party-licenses/orderedmap/LICENSE](third-party-licenses/orderedmap/LICENSE)
  - **[p-limit](sindresorhus/p-limit)**
     - name: p-limit
     - licenses: MIT
@@ -3675,7 +3675,7 @@
     - name: parse5
     - licenses: MIT
     - repository: https://github.com/inikulin/parse5
-    - license text: third-party-licenses/parse5/LICENSE
+    - license text: [third-party-licenses/parse5/LICENSE](third-party-licenses/parse5/LICENSE)
  - **[parseurl](pillarjs/parseurl)**
     - name: parseurl
     - licenses: MIT
@@ -3820,47 +3820,47 @@
     - name: prosemirror-commands
     - licenses: MIT
     - repository: https://github.com/prosemirror/prosemirror-commands
-    - license text: third-party-licenses/prosemirror-commands/LICENSE
+    - license text: [third-party-licenses/prosemirror-commands/LICENSE](third-party-licenses/prosemirror-commands/LICENSE)
  - **[prosemirror-history](https://github.com/prosemirror/prosemirror-history)**
     - name: prosemirror-history
     - licenses: MIT
     - repository: https://github.com/prosemirror/prosemirror-history
-    - license text: third-party-licenses/prosemirror-history/LICENSE
+    - license text: [third-party-licenses/prosemirror-history/LICENSE](third-party-licenses/prosemirror-history/LICENSE)
  - **[prosemirror-inputrules](https://github.com/prosemirror/prosemirror-inputrules)**
     - name: prosemirror-inputrules
     - licenses: MIT
     - repository: https://github.com/prosemirror/prosemirror-inputrules
-    - license text: third-party-licenses/prosemirror-inputrules/LICENSE
+    - license text: [third-party-licenses/prosemirror-inputrules/LICENSE](third-party-licenses/prosemirror-inputrules/LICENSE)
  - **[prosemirror-keymap](https://github.com/prosemirror/prosemirror-keymap)**
     - name: prosemirror-keymap
     - licenses: MIT
     - repository: https://github.com/prosemirror/prosemirror-keymap
-    - license text: third-party-licenses/prosemirror-keymap/LICENSE
+    - license text: [third-party-licenses/prosemirror-keymap/LICENSE](third-party-licenses/prosemirror-keymap/LICENSE)
  - **[prosemirror-model](https://code.haverbeke.berlin/prosemirror/prosemirror-model)**
     - name: prosemirror-model
     - licenses: MIT
     - repository: https://code.haverbeke.berlin/prosemirror/prosemirror-model
-    - license text: third-party-licenses/prosemirror-model/LICENSE
+    - license text: [third-party-licenses/prosemirror-model/LICENSE](third-party-licenses/prosemirror-model/LICENSE)
  - **[prosemirror-schema-list](https://github.com/prosemirror/prosemirror-schema-list)**
     - name: prosemirror-schema-list
     - licenses: MIT
     - repository: https://github.com/prosemirror/prosemirror-schema-list
-    - license text: third-party-licenses/prosemirror-schema-list/LICENSE
+    - license text: [third-party-licenses/prosemirror-schema-list/LICENSE](third-party-licenses/prosemirror-schema-list/LICENSE)
  - **[prosemirror-state](https://github.com/prosemirror/prosemirror-state)**
     - name: prosemirror-state
     - licenses: MIT
     - repository: https://github.com/prosemirror/prosemirror-state
-    - license text: third-party-licenses/prosemirror-state/LICENSE
+    - license text: [third-party-licenses/prosemirror-state/LICENSE](third-party-licenses/prosemirror-state/LICENSE)
  - **[prosemirror-transform](https://github.com/prosemirror/prosemirror-transform)**
     - name: prosemirror-transform
     - licenses: MIT
     - repository: https://github.com/prosemirror/prosemirror-transform
-    - license text: third-party-licenses/prosemirror-transform/LICENSE
+    - license text: [third-party-licenses/prosemirror-transform/LICENSE](third-party-licenses/prosemirror-transform/LICENSE)
  - **[prosemirror-view](https://code.haverbeke.berlin/prosemirror/prosemirror-view)**
     - name: prosemirror-view
     - licenses: MIT
     - repository: https://code.haverbeke.berlin/prosemirror/prosemirror-view
-    - license text: third-party-licenses/prosemirror-view/LICENSE
+    - license text: [third-party-licenses/prosemirror-view/LICENSE](third-party-licenses/prosemirror-view/LICENSE)
  - **[proxy-addr](jshttp/proxy-addr)**
     - name: proxy-addr
     - licenses: MIT
@@ -4021,7 +4021,7 @@
     - name: rfc4648
     - licenses: MIT
     - repository: https://github.com/swansontec/rfc4648.js
-    - license text: third-party-licenses/rfc4648/LICENSE
+    - license text: [third-party-licenses/rfc4648/LICENSE](third-party-licenses/rfc4648/LICENSE)
  - **[rfdc](https://github.com/davidmarkclements/rfdc)**
     - name: rfdc
     - licenses: MIT
@@ -4034,7 +4034,7 @@
     - name: rope-sequence
     - licenses: MIT
     - repository: https://github.com/marijnh/rope-sequence
-    - license text: third-party-licenses/rope-sequence/LICENSE
+    - license text: [third-party-licenses/rope-sequence/LICENSE](third-party-licenses/rope-sequence/LICENSE)
  - **[router](pillarjs/router)**
     - name: router
     - licenses: MIT
@@ -4055,7 +4055,7 @@
     - name: rxjs
     - licenses: Apache-2.0
     - repository: https://github.com/reactivex/rxjs
-    - license text: third-party-licenses/rxjs/LICENSE.txt
+    - license text: [third-party-licenses/rxjs/LICENSE.txt](third-party-licenses/rxjs/LICENSE.txt)
  - **[safe-buffer](https://github.com/feross/safe-buffer)**
     - name: safe-buffer
     - licenses: MIT
@@ -4452,7 +4452,7 @@
     - name: tslib
     - licenses: 0BSD
     - repository: https://github.com/Microsoft/tslib
-    - license text: third-party-licenses/tslib/LICENSE.txt
+    - license text: [third-party-licenses/tslib/LICENSE.txt](third-party-licenses/tslib/LICENSE.txt)
  - **[tsyringe](https://github.com/Microsoft/tsyringe)**
     - name: tsyringe
     - licenses: MIT
@@ -4557,7 +4557,7 @@
     - name: uuid
     - licenses: MIT
     - repository: https://github.com/uuidjs/uuid
-    - license text: third-party-licenses/uuid/LICENSE.md
+    - license text: [third-party-licenses/uuid/LICENSE.md](third-party-licenses/uuid/LICENSE.md)
  - **[v8-compile-cache-lib](https://github.com/cspotcode/v8-compile-cache-lib)**
     - name: v8-compile-cache-lib
     - licenses: MIT
@@ -4582,7 +4582,7 @@
     - name: w3c-keyname
     - licenses: MIT
     - repository: https://github.com/marijnh/w3c-keyname
-    - license text: third-party-licenses/w3c-keyname/LICENSE
+    - license text: [third-party-licenses/w3c-keyname/LICENSE](third-party-licenses/w3c-keyname/LICENSE)
  - **[w3c-xmlserializer](jsdom/w3c-xmlserializer)**
     - name: w3c-xmlserializer
     - licenses: MIT
@@ -4795,5 +4795,5 @@
     - name: zone.js
     - licenses: MIT
     - repository: https://github.com/angular/angular
-    - license text: third-party-licenses/zone.js/LICENSE
-    - license text: third-party-licenses/zone.js/LICENSE.wrapped
+    - license text: [third-party-licenses/zone.js/LICENSE](third-party-licenses/zone.js/LICENSE)
+    - license text: [third-party-licenses/zone.js/LICENSE.wrapped](third-party-licenses/zone.js/LICENSE.wrapped)
