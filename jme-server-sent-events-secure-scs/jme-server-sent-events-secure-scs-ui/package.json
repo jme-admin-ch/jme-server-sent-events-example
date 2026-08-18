@@ -5,9 +5,9 @@
   "scripts": {
     "start": "ng serve",
     "start:4201": "ng serve --port 4201",
-    "build": "ng build --base-href /jme-server-sent-events-secure-scs/",
-    "build-dev": "ng build -c development --base-href /jme-server-sent-events-secure-scs/",
-    "build-prod": "ng build -c production --base-href /jme-server-sent-events-secure-scs/",
+    "build": "npm run check-licenses && ng build --base-href /jme-server-sent-events-secure-scs/",
+    "build-dev": "npm run check-licenses && ng build -c development --base-href /jme-server-sent-events-secure-scs/",
+    "build-prod": "npm run check-licenses && ng build -c production --base-href /jme-server-sent-events-secure-scs/",
     "test": "ng test",
     "test:ci": "ng test --watch=false --silent",
     "lint": "ng lint",
