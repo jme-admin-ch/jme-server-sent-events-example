@@ -14,7 +14,7 @@
     "lint-fix": "ng lint --fix",
     "prettier": "./node_modules/.bin/prettier --write **/{*.ts,*.html,*.scss,*.json,*.js}",
     "format": "npm run lint -- --fix && npm run prettier",
-    "check-licenses": "apache2-license-checker"
+    "check-licenses": "jeap-frontend-license-checker"
   },
   "private": true,
   "dependencies": {
@@ -55,7 +55,7 @@
     "@angular/build": "^20.0",
     "@angular/cli": "^20.0",
     "@angular/compiler-cli": "^20.3.27",
-    "@bbc/apache2-license-checker": "^1.1.4",
+    "@jeap/jeap-frontend-license-checker": "^1.0.0",
     "@types/jest": "30.0.0",
     "@types/node": "25.9.5",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
@@ -68,7 +68,6 @@
     "jest-environment-jsdom": "30.4.1",
     "jest-preset-angular": "17.0.0",
     "jest-sonar-reporter": "2.0.0",
-    "license-checker": "^25.0.1",
     "prettier": "3.9.6",
     "typescript": "5.9.3"
   },
