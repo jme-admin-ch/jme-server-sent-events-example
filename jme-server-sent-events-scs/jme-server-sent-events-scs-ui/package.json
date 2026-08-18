@@ -4,16 +4,17 @@
   "license": "Apache-2.0",
   "scripts": {
     "start": "ng serve",
-    "build": "npm run check-licenses && ng build --base-href /jme-server-sent-events-scs/",
-    "build-dev": "npm run check-licenses && ng build -c development --base-href /jme-server-sent-events-scs/",
-    "build-prod": "npm run check-licenses && ng build -c production --base-href /jme-server-sent-events-scs/",
+    "build": "npm run check-licenses && npm run generateLicenseFile && ng build --base-href /jme-server-sent-events-scs/",
+    "build-dev": "npm run check-licenses && npm run generateLicenseFile && ng build -c development --base-href /jme-server-sent-events-scs/",
+    "build-prod": "npm run check-licenses && npm run generateLicenseFile && ng build -c production --base-href /jme-server-sent-events-scs/",
     "test": "ng test",
     "test:ci": "ng test --watch=false --silent",
     "lint": "ng lint",
     "lint-fix": "ng lint --fix",
     "prettier": "./node_modules/.bin/prettier --write **/{*.ts,*.html,*.scss,*.json,*.js}",
     "format": "npm run lint -- --fix && npm run prettier",
-    "check-licenses": "jeap-frontend-license-checker"
+    "check-licenses": "jeap-frontend-license-checker",
+    "generateLicenseFile": "jeap-frontend-license-checker notices"
   },
   "private": true,
   "dependencies": {

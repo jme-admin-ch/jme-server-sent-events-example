@@ -10,6 +10,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 ### Changed
 - Replaced the frontend license checker with `@jeap/jeap-frontend-license-checker`, and the license check now runs as part of the npm frontend build.
 
+### Added
+- Both UI modules now generate a `THIRD-PARTY-FRONTEND-LICENSES.md` and carry the full license texts of their redistributed dependencies as files under `third-party-licenses/`.
+
 ## [4.0.0] - 2026-08-18
 
 ### Dependencies
