@@ -11,6 +11,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - **ch.admin.bit.jeap:jeap-spring-boot-parent**: 39.0.1 → 39.3.0 (minor)
 - **uuid**: 11.1.1 → 14.0.2 (major)
 
+### Changed
+- Both UI modules now let Jest transform `uuid`, which ships as ESM only since v13 and can no longer be loaded untransformed by Jest's CommonJS runtime. The Jest configuration of the two modules is now shared via `jest.config.base.js` so it cannot drift apart.
+
 ## [4.0.1] - 2026-08-18
 
 ### Changed
