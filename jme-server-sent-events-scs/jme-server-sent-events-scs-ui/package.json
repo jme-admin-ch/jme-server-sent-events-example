@@ -42,7 +42,7 @@
   },
   "//": "These overrides pin transitive dependencies of @quadrel-enterprise-ui to versions that clear the Trivy findings of JEAP-7389; drop them once upstream ships the fixed versions itself. They force versions upstream never declared support for - @quadrel-enterprise-ui/framework asks for uuid ^9 - so bumps here need more scrutiny than a normal dependency update. uuid is ESM-only since v13 and therefore has to stay listed in jest.config.base.js.",
   "overrides": {
-    "deepmerge-ts": "8.0.1",
+    "deepmerge-ts": "8.0.2",
     "uuid": "14.0.2"
   },
   "devDependencies": {
