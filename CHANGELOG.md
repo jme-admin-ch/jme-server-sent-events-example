@@ -5,6 +5,12 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project follows
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [8.10.0] - 2026-09-04
+
+### Dependencies
+- **ch.admin.bit.jeap:jeap-spring-boot-parent**: 40.9.0 → 40.9.2 (patch)
+- **eslint**: 10.9.1 → 10.10.0 (minor)
+
 ## [8.9.0] - 2026-09-03
 
 ### Dependencies
