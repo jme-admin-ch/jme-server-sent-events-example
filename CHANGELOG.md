@@ -5,6 +5,12 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project follows
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [9.0.0] - 2026-09-11
+
+### Dependencies
+- **org.codehaus.mojo:exec-maven-plugin**: 3.6.3 → 3.6.4 (patch)
+- **ch.admin.bit.jeap:jeap-spring-boot-parent**: 40.13.0 → 41.1.0 (major)
+
 ## [8.14.0] - 2026-09-10
 
 ### Dependencies
