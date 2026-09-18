@@ -5,6 +5,13 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project follows
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [10.5.0] - 2026-09-18
+
+### Dependencies
+- **jest-environment-jsdom**: 30.5.1 → 30.5.2 (patch)
+- **jest**: 30.5.1 → 30.5.2 (patch)
+- **eslint**: 10.10.0 → 10.11.0 (minor)
+
 ## [10.4.0] - 2026-09-17
 
 ### Dependencies
