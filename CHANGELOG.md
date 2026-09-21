@@ -5,6 +5,12 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project follows
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [10.5.2] - 2026-09-21
+
+### Dependencies
+- **@typescript-eslint/parser**: 8.70.0 → 8.70.1 (patch)
+- **@typescript-eslint/eslint-plugin**: 8.70.0 → 8.70.1 (patch)
+
 ## [10.5.1] - 2026-09-19
 
 ### Dependencies
