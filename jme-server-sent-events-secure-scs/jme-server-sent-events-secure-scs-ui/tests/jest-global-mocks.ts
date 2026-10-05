@@ -11,7 +11,8 @@ const mock = () => {
 Object.defineProperty(window, 'localStorage', {value: mock()});
 Object.defineProperty(window, 'sessionStorage', {value: mock()});
 Object.defineProperty(window, 'scrollIntoView', {value: mock()});
+// Quadrel's grid reads gridColumnStart/gridColumnEnd of every column and fails on undefined values
 Object.defineProperty(window, 'getComputedStyle', {
-  value: () => ['-webkit-appearance']
+  value: () => Object.assign(['-webkit-appearance'], {gridColumnStart: 'auto', gridColumnEnd: 'auto'})
 });
 (window as any).HTMLElement.prototype.scrollIntoView = function () {};
