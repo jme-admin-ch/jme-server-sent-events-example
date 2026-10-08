@@ -5,6 +5,11 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project follows
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [10.12.0] - 2026-10-08
+
+### Dependencies
+- **ch.admin.bit.jeap:jeap-spring-boot-parent**: 41.17.1 → 41.18.1 (minor)
+
 ## [10.11.0] - 2026-10-07
 
 ### Security
