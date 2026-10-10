@@ -5,6 +5,12 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project follows
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [10.12.1] - 2026-10-10
+
+### Dependencies
+- **uuid**: 14.0.2 → 14.0.3 (patch)
+- **prettier**: 3.9.9 → 3.9.10 (patch)
+
 ## [10.12.0] - 2026-10-08
 
 ### Dependencies
