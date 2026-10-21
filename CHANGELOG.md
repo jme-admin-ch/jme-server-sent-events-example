@@ -5,6 +5,12 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project follows
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [10.19.0] - 2026-10-21
+
+### Dependencies
+- **ch.admin.bit.jeap:jeap-spring-boot-parent**: 41.22.0 → 41.23.0 (minor)
+- **com.microsoft.playwright:playwright**: 1.63.0 → 1.64.0 (minor)
+
 ## [10.18.0] - 2026-10-19
 
 ### Dependencies
