@@ -1,8 +1,8 @@
 publiccodeYmlVersion: 0.5.0
 name: jme-server-sent-events-example
 applicationSuite: JME
-softwareVersion: 10.20.0
-releaseDate: 2026-10-23
+softwareVersion: 10.21.0
+releaseDate: 2026-10-27
 url: "https://github.com/jme-admin-ch/jme-server-sent-events-example.git"
 landingURL: "https://github.com/jme-admin-ch/jme"
 platforms:
