@@ -30,6 +30,9 @@ oauth-mock-data:
         - "jme_@message_#send"
         - "jme_@message_#read"
         - "jme_@sse_#read"
+      audience:
+        - "https://resources.jme.admin.ch/jme/jme-server-sent-events-scs"
+        - "https://resources.jme.admin.ch/jme/jme-server-sent-events-secure-scs"
   users:
     - id: "user"
       given-name: "Maxine"
@@ -37,3 +40,6 @@ oauth-mock-data:
       locale: "DE"
       preferred-username: "12345"
       userroles: ["jme_@person_#read", "jme_@person_#write", "jme_@sse_#read"]
+
+mockserver:
+  introspection-endpoint-audience-check: "on"

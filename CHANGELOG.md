@@ -5,6 +5,13 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project follows
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [11.5.0] - 2026-11-04
+
+### Changed
+
+- Enable strict audience validation (`strict-audience-validation: "on"`) with explicit resource IDs `https://resources.jme.admin.ch/jme/<name>` for `jme-server-sent-events-scs`, `jme-server-sent-events-secure-scs`.
+- The OAuth mock server issues the matching token audiences and checks the audience on token introspection.
+
 ## [11.4.0] - 2026-11-04
 
 ### Dependencies

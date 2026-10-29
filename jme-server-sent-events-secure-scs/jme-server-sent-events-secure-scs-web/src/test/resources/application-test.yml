@@ -7,6 +7,8 @@ jeap:
   security:
     oauth2:
       resourceserver:
+        # The OIDC mock of the browser tests issues access tokens with its client id as audience.
+        resource-id: jme-server-sent-events-secure-scs
         authorization-server:
           issuer: http://localhost:8313/oidc-mock
           jwk-set-uri: http://localhost:8313/oidc-mock/.well-known/jwks.json

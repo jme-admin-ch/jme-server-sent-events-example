@@ -21,6 +21,8 @@ jeap:
   security:
     oauth2:
       resourceserver:
+        resource-id: "https://resources.jme.admin.ch/jme/jme-server-sent-events-scs"
+        strict-audience-validation: "on"
         system-name: "jme"
   swagger:
     status: OPEN
