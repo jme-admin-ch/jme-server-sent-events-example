@@ -5,6 +5,12 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project follows
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [11.2.0] - 2026-10-31
+
+### Dependencies
+- **tslib**: 2.8.1 → 2.9.1 (minor)
+- **eslint**: 10.13.0 → 10.14.0 (minor)
+
 ## [11.1.1] - 2026-10-30
 
 ### Dependencies
