@@ -13,8 +13,7 @@ export class PushEventService {
 
   private isConnected = false;
 
-  constructor(private readonly qdPushEventService: QdPushEventsService) {
-  }
+  constructor(private readonly qdPushEventService: QdPushEventsService) {}
 
   async connect() {
     if (!this.isConnected) {
@@ -54,5 +53,4 @@ export class PushEventService {
       console.error('Failed to connect to push events:', error);
     }
   }
-
 }

@@ -201,3 +201,11 @@ This repository is part of the [JME open-source suite](https://github.com/jme-ad
 ## License
 
 This project is licensed under the [Apache License 2.0](LICENSE).
+
+## Frontend dependencies
+
+Both UI modules use Angular 21 and Quadrel 21, with NgRx 21. Quadrel currently
+requires Angular 21. Use Node.js 20.19+, 22.12+ or 24+ and run `npm ci`,
+`npm run build-prod`, `npm test -- --watch=false --run-in-band` and `npm run lint`
+in each UI directory. Translations are loaded by `QdLanguageModule`, including
+the framework assets in `assets/i18n/qd-ui`.

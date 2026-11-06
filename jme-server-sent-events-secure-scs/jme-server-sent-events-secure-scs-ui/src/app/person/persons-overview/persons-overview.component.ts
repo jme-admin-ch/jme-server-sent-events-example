@@ -1,23 +1,23 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {CommonModule} from '@angular/common';
+
 import {
-    QD_TABLE_DATA_RESOLVER_TOKEN,
-    QdNotification,
-    QdNotificationsService,
-    QdPageConfig,
-    QdPageModule,
-    QdSectionConfig,
-    QdSectionModule,
-    QdTableConfig,
-    QdTableModule
+  QD_TABLE_DATA_RESOLVER_TOKEN,
+  QdNotification,
+  QdNotificationsService,
+  QdPageConfig,
+  QdPageModule,
+  QdSectionConfig,
+  QdSectionModule,
+  QdTableConfig,
+  QdTableModule
 } from '@quadrel-enterprise-ui/framework';
 import {BehaviorSubject, Subscription} from 'rxjs';
 import {PersonService} from '../../shared/services/person.service';
 import {ActivatedRoute, Router} from '@angular/router';
 import {QdAuthorizationService} from '@quadrel-enterprise-ui/auth';
 import {writeQdRoleFilter} from '../../shared/common.constants';
-import {EventName, PushEventService} from "../../shared/services/pushevent.service";
-import {PersonTableDataResolverService} from "../../shared/services/person-table-data-resolver.service";
+import {EventName, PushEventService} from '../../shared/services/pushevent.service';
+import {PersonTableDataResolverService} from '../../shared/services/person-table-data-resolver.service';
 
 export type tableColumns = 'lastname' | 'firstname' | 'id';
 
@@ -25,7 +25,7 @@ export type tableColumns = 'lastname' | 'firstname' | 'id';
   selector: 'app-persons-overview',
   templateUrl: './persons-overview.component.html',
   styleUrls: ['./persons-overview.component.scss'],
-  imports: [CommonModule, QdSectionModule, QdTableModule, QdPageModule],
+  imports: [QdSectionModule, QdTableModule, QdPageModule],
   providers: [
     {
       provide: QD_TABLE_DATA_RESOLVER_TOKEN,
@@ -48,10 +48,12 @@ export class PersonsOverviewComponent implements OnInit, OnDestroy {
     title: {
       i18n: 'i18n.overview.section.title'
     },
-    action: {
-      i18n: 'i18n.overview.section.addBtn',
-      type: 'addNew'
-    }
+    actions: [
+      {
+        label: {i18n: 'i18n.overview.section.addBtn'},
+        type: 'addNew'
+      }
+    ]
   };
 
   qdTableConfig: QdTableConfig<tableColumns> = {
@@ -88,7 +90,7 @@ export class PersonsOverviewComponent implements OnInit, OnDestroy {
   };
 
   qdNotificationInsufficientPermissions: QdNotification = {
-    type: 'critical',
+    state: 'critical',
     i18n: 'i18n.error.insufficientPermissions',
     showAsSnackbar: true
   };
@@ -121,7 +123,7 @@ export class PersonsOverviewComponent implements OnInit, OnDestroy {
     this.pushEventService.observe(eventName, this.qdTableConfig.uid, (event: MessageEvent) => {
       console.log('Resource updated event received:', event);
       this.notificationService.add('qd-page', {
-        type: 'success',
+        state: 'positive',
         i18n: 'resource ' + text + ' ' + event.data,
         showAsSnackbar: true,
         lifeTime: 7

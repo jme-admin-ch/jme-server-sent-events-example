@@ -25,7 +25,9 @@
               "browser": ""
             },
             "index": "src/index.html",
-            "polyfills": ["zone.js"],
+            "polyfills": [
+              "zone.js"
+            ],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "extractLicenses": false,
@@ -52,9 +54,13 @@
                 "output": "/assets/auth"
               }
             ],
-            "styles": ["src/styles.scss"],
+            "styles": [
+              "src/styles.scss"
+            ],
             "stylePreprocessorOptions": {
-              "includePaths": ["node_modules/@quadrel-enterprise-ui/framework/src/assets/styles"]
+              "includePaths": [
+                "node_modules/@quadrel-enterprise-ui/framework/src/assets/styles"
+              ]
             },
             "allowedCommonJsDependencies": [
               "moment",
@@ -121,9 +127,10 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "configPath": "./tests/jest.config.js",
+            "config": "./tests/jest.config.js",
             "watch": true,
-            "verbose": true
+            "verbose": true,
+            "zoneless": false
           },
           "configurations": {
             "production": {
@@ -135,7 +142,10 @@
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
-            "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
           }
         }
       }
@@ -151,7 +161,9 @@
     }
   },
   "cli": {
-    "schematicCollections": ["@angular-eslint/schematics"],
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ],
     "analytics": false
   }
 }

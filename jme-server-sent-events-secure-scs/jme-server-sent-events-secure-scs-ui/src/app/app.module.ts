@@ -3,8 +3,8 @@ import {BrowserModule} from '@angular/platform-browser';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
-import {LANGUAGE_ENVIRONMENT} from '@quadrel-enterprise-ui/language';
-import {APP_ENVIRONMENT, QdUiModule} from '@quadrel-enterprise-ui/framework';
+import {QdLanguageModule} from '@quadrel-enterprise-ui/language';
+import {APP_ENVIRONMENT, QdFrameworkModule} from '@quadrel-enterprise-ui/framework';
 import {StoreModule} from '@ngrx/store';
 import {QdAuthModule} from '@quadrel-enterprise-ui/auth';
 import {appEnvironment, appSetup, authConfig} from '../environments/environment';
@@ -15,19 +15,10 @@ import localeFRCH from '@angular/common/locales/fr-CH';
 import localeITCH from '@angular/common/locales/it-CH';
 import localeENCH from '@angular/common/locales/en-CH';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {HttpBackend, HttpClientModule} from '@angular/common/http';
-import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {provideHttpClient, withInterceptorsFromDi} from '@angular/common/http';
 import {ReactiveFormsModule} from '@angular/forms';
-import {MultiTranslateHttpLoader} from 'ngx-translate-multi-http-loader';
 import {PersonModule} from './person/person.module';
 import {CoreModule} from './core/core.module';
-
-export function createTranslateLoader(httpBackend: HttpBackend) {
-  return new MultiTranslateHttpLoader(httpBackend, [
-    {prefix: './assets/i18n/', suffix: '.json'},
-    {prefix: './assets/i18n/qd-ui/', suffix: '.json'}
-  ]);
-}
 
 registerLocaleData(localeDECH);
 registerLocaleData(localeENCH);
@@ -41,27 +32,19 @@ registerLocaleData(localeITCH);
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule,
     ReactiveFormsModule,
     StoreModule.forRoot({}),
     QdAuthModule.forRoot(appSetup, authConfig),
-    QdUiModule.forRoot(appEnvironment),
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: createTranslateLoader,
-        deps: [HttpBackend]
-      }
+    QdFrameworkModule.forRoot(appEnvironment),
+    QdLanguageModule.forRoot({
+      static: [{prefix: './assets/i18n/qd-ui/'}, {prefix: './assets/i18n/'}]
     }),
     CoreModule,
     PersonModule
   ],
   exports: [QdAuthModule],
   providers: [
-    {
-      provide: LANGUAGE_ENVIRONMENT,
-      useValue: appEnvironment
-    },
+    provideHttpClient(withInterceptorsFromDi()),
     {
       provide: APP_ENVIRONMENT,
       useValue: appEnvironment

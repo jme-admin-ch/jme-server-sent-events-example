@@ -23,10 +23,7 @@ describe('PushEventService', () => {
     };
 
     TestBed.configureTestingModule({
-      providers: [
-        PushEventService,
-        {provide: QdPushEventsService, useValue: qdPushEventsService}
-      ]
+      providers: [PushEventService, {provide: QdPushEventsService, useValue: qdPushEventsService}]
     });
 
     service = TestBed.inject(PushEventService);
@@ -38,10 +35,9 @@ describe('PushEventService', () => {
 
     expect(qdPushEventsService.unobserveAll).toHaveBeenCalledTimes(1);
     expect(qdPushEventsService.connect).toHaveBeenCalledTimes(1);
-    expect(qdPushEventsService.connect).toHaveBeenCalledWith(
-      expect.stringContaining('ui-api/sse/events'),
-      {disableAuthentication: true}
-    );
+    expect(qdPushEventsService.connect).toHaveBeenCalledWith(expect.stringContaining('ui-api/sse/events'), {
+      disableAuthentication: true
+    });
   });
 
   it('forwards matching SSE resource events to the UI', () => {

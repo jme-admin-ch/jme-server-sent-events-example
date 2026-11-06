@@ -3,7 +3,7 @@ import {QdDialogAuthSessionEndService, QdShellConfig} from '@quadrel-enterprise-
 import {QdAuthenticationService, QdConfigService} from '@quadrel-enterprise-ui/auth';
 import {TranslateService} from '@ngx-translate/core';
 import {VersionService} from './shared/services/version.service';
-import {PushEventService} from "./shared/services/pushevent.service";
+import {PushEventService} from './shared/services/pushevent.service';
 
 @Component({
   standalone: false,
@@ -27,9 +27,6 @@ export class AppComponent implements OnInit, OnDestroy {
     },
     hasSearch: false,
     isInternal: true,
-    headerWidget: {
-      isDisabled: true
-    },
     serviceNavigation: {
       pamsAppId: 'notSet',
       languageList: ['de', 'fr', 'it', 'en'],
