@@ -6,6 +6,7 @@ export const appSetup: QdAppSetup = {
   serviceEndpoint: '/jme-server-sent-events-secure-scs/'
 };
 
+// Let the backend configuration control auto-login; a frontend value takes precedence in Quadrel Auth 21.
 export const authConfig: QdAuthConfigServerSide = {
   configPathSegment: 'ui-api/configuration/auth',
   clientId: 'jme-server-sent-events-secure-scs',
@@ -13,8 +14,7 @@ export const authConfig: QdAuthConfigServerSide = {
   logLevel: QdLogLevel.Debug,
   renewUserInfoAfterTokenRenew: true,
   silentRenew: true,
-  silentRenewUrl: `${window.location.origin}/jme-server-sent-events-secure-scs/assets/auth/silent-renew.html`,
-  useAutoLogin: false
+  silentRenewUrl: `${window.location.origin}/jme-server-sent-events-secure-scs/assets/auth/silent-renew.html`
 };
 
 export const appEnvironment: QdAppEnvironment = {

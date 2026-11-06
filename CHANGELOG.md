@@ -10,6 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 ### Changed
 
 - Upgrade both UIs to Angular 21 and Quadrel 21, with matching NgRx and test tooling.
+- Preserve backend-controlled auto-login in the secure UI with Quadrel Auth 21.
 
 ## [11.7.0] - 2026-11-06
 
