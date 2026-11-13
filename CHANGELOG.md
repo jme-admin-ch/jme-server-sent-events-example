@@ -5,6 +5,17 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project follows
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [11.11.0] - 2026-11-13
+
+### Dependencies
+- **org.codehaus.mojo:exec-maven-plugin**: 3.6.4 → 3.7.0 (minor)
+- **ch.admin.bit.jeap:jeap-spring-boot-parent**: 41.35.0 → 41.37.0 (minor)
+- **ch.admin.bit.jeap:jeap-oauth-mock-server**: 11.16.0 → 11.17.0 (minor)
+- **typescript-eslint**: 8.72.1 → 8.72.2 (patch)
+- **@typescript-eslint/parser**: 8.72.1 → 8.72.2 (patch)
+- **@typescript-eslint/eslint-plugin**: 8.72.1 → 8.72.2 (patch)
+- **@quadrel-enterprise-ui/framework**: 21.19.2 → 21.20.0 (minor)
+
 ## [11.10.0] - 2026-11-11
 
 ### Dependencies
