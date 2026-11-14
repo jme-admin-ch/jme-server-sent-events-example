@@ -5,6 +5,13 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project follows
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [11.11.1] - 2026-11-14
+
+### Dependencies
+- **@quadrel-enterprise-ui/language**: 21.0.1 → 21.0.2 (patch)
+- **@quadrel-enterprise-ui/framework**: 21.20.0 → 21.20.1 (patch)
+- **@quadrel-enterprise-ui/browser-check**: 21.0.1 → 21.0.2 (patch)
+
 ## [11.11.0] - 2026-11-13
 
 ### Dependencies

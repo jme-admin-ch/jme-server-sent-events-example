@@ -32,9 +32,9 @@
     "@ngx-translate/http-loader": "^17.0.0",
     "@popperjs/core": "^2.11.8",
     "@quadrel-enterprise-ui/auth": "21.2.0",
-    "@quadrel-enterprise-ui/browser-check": "21.0.1",
-    "@quadrel-enterprise-ui/framework": "21.20.0",
-    "@quadrel-enterprise-ui/language": "21.0.1",
+    "@quadrel-enterprise-ui/browser-check": "21.0.2",
+    "@quadrel-enterprise-ui/framework": "21.20.1",
+    "@quadrel-enterprise-ui/language": "21.0.2",
     "rxjs": "~7.8.1",
     "tslib": "^2.8.1",
     "zone.js": "~0.16.0"
