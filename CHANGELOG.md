@@ -5,6 +5,13 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project follows
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [11.16.0] - 2026-11-19
+
+### Dependencies
+- **ch.admin.bit.jeap:jeap-spring-boot-parent**: 41.38.0 → 41.39.0 (minor)
+- **ch.admin.bit.jeap:jeap-oauth-mock-server**: 11.18.0 → 11.19.0 (minor)
+- **@angular-devkit/build-angular**: 21.2.29 → 21.2.30 (patch)
+
 ## [11.15.0] - 2026-11-18
 
 ### Dependencies
