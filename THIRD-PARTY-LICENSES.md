@@ -23,6 +23,7 @@ Apache License Version 2.0
  * ch.admin.bit.jeap:jeap-messaging-infrastructure-kafka-test - [ch.admin.bit.jeap:jeap-messaging-infrastructure-kafka-test](https://github.com/jeap-admin-ch/jeap-messaging/tree/main/jeap-messaging-infrastructure-kafka-test)
  * ch.admin.bit.jeap:jeap-messaging-model - [ch.admin.bit.jeap:jeap-messaging-model](https://github.com/jeap-admin-ch/jeap-messaging/tree/main/jeap-messaging-model)
  * ch.admin.bit.jeap:jeap-oauth-mock-server - [ch.admin.bit.jeap:jeap-oauth-mock-server](https://github.com/jeap-admin-ch/jeap-oauth-mock-server/tree/main/jeap-oauth-mock-server)
+ * ch.admin.bit.jeap:jeap-reaction-observer-header-starter - [ch.admin.bit.jeap:jeap-reaction-observer-header-starter](https://github.com/jeap-admin-ch/jeap-reaction-observer/tree/main/jeap-reaction-observer-header-starter)
  * ch.admin.bit.jeap:jeap-server-sent-events-core - [ch.admin.bit.jeap:jeap-server-sent-events-core](https://github.com/jeap-admin-ch/jeap-server-sent-events/tree/main/jeap-server-sent-events-core)
  * ch.admin.bit.jeap:jeap-server-sent-events-messaging - [ch.admin.bit.jeap:jeap-server-sent-events-messaging](https://github.com/jeap-admin-ch/jeap-server-sent-events/tree/main/jeap-server-sent-events-messaging)
  * ch.admin.bit.jeap:jeap-server-sent-events-starter - [ch.admin.bit.jeap:jeap-server-sent-events-starter](https://github.com/jeap-admin-ch/jeap-server-sent-events/tree/main/jeap-server-sent-events-starter)
