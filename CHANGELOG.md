@@ -5,6 +5,12 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project follows
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [11.18.0] - 2026-11-23
+
+### Dependencies
+- **com.microsoft.playwright:playwright**: 1.65.0 → 1.65.1 (patch)
+- **@quadrel-enterprise-ui/framework**: 21.21.1 → 21.22.1 (minor)
+
 ## [11.17.0] - 2026-11-20
 
 ### Dependencies
