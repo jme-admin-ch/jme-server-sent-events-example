@@ -5,6 +5,12 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project follows
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [11.19.0] - 2026-11-24
+
+### Dependencies
+- **ch.admin.bit.jeap:jeap-oauth-mock-server**: 11.19.0 → 11.20.0 (minor)
+- **@quadrel-enterprise-ui/framework**: 21.22.1 → 21.23.0 (minor)
+
 ## [11.18.0] - 2026-11-23
 
 ### Dependencies
