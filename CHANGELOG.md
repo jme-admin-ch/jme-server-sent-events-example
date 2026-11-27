@@ -5,6 +5,15 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project follows
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [11.23.0] - 2026-11-27
+
+### Dependencies
+- **ch.admin.bit.jeap:jeap-oauth-mock-server**: 11.21.0 → 11.22.0 (minor)
+- **typescript-eslint**: 8.73.0 → 8.74.0 (minor)
+- **@typescript-eslint/parser**: 8.73.0 → 8.74.0 (minor)
+- **@typescript-eslint/eslint-plugin**: 8.73.0 → 8.74.0 (minor)
+- **@quadrel-enterprise-ui/framework**: 21.25.1 → 21.27.0 (minor)
+
 ## [11.22.0] - 2026-11-26
 
 ### Dependencies
