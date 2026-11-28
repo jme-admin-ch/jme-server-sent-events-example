@@ -5,6 +5,11 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project follows
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [11.24.1] - 2026-11-28
+
+### Dependencies
+- **@types/node**: 26.6.6 → 26.6.7 (patch)
+
 ## [11.24.0] - 2026-11-27
 
 ### Dependencies
